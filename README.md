@@ -43,6 +43,7 @@ Arduino IDE 1.5.7
 
 Download and install the Arduino IDE version 1.5.7, see instructions <a href="http://arduino.cc/en/Main/software/">hier</a>. Versions lower then 1.5.7 will produce errors with some sketches as the compiler is too old.
 Start the Arduino IDE once and quit the application again. This will create directory structures needed in the next steps.
+
 Install the SOLUCON IoT Starter Kit library.
 
 **[Installing an Arduino Library Guide](https://learn.sparkfun.com/tutorials/installing-an-arduino-library)** - Basic information on how to install an Arduino library.
