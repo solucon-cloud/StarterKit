@@ -124,7 +124,7 @@ Digital output is automaticly enabled by calling init(). You can disable digital
 
 ## Monitor data in SOLUCON Device-Manager
 ## Getting started with SOLUCON Rest-API
-Look at the wiki pages <a href="https://github.com/solucon-cloud/StarterKit/wiki/Q-loud-IoT-Starter-Kit">here</a>
+Look at the wiki pages <a href="https://github.com/solucon-cloud/StarterKit/wiki/Qloud-IoT-Starter-Kit">here</a>
 
 ## What comes next
 
