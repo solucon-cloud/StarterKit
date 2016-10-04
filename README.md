@@ -185,18 +185,18 @@ Also, there's 2 LEDs to indicate UART RX and TX.
 |     0 | color_rgb   | left RGB LED
 |     1 | color_rgb   | center RGB LED 
 |     2 | color_rgb   | right RGB LED 
-|     3 | binary_8bit | Arduino  `R_ID=`0: PWM (analog OUT) 1
-|     4 | binary_8bit | Arduino  1: PWM (analog OUT) 2
-|     5 | binary_8bit | Arduino  2: ADC (analog IN) 1 (IGNORED)
-|     6 | binary_8bit | Arduino  3: ADC (analog IN) 2 (IGNORED)
-|     7 | binary_8bit | Arduino  4: digital OUT 1
-|     8 | binary_8bit | Arduino  5: digital OUT 2
-|     9 | binary_8bit | Arduino  6: digital OUT 3
-|    10 | binary_8bit | Arduino  7: digital OUT 4
-|    11 | binary_8bit | Arduino  8: digital IN 1 (IGNORED)
-|    12 | binary_8bit | Arduino  9: digital IN 2 (IGNORED)
-|    13 | binary_8bit | Arduino 10: digital IN 3 (IGNORED)
-|    14 | binary_8bit | Arduino 11: digital IN 4 (IGNORED)
+|     3 | binary_8bit | Arduino (pin 12) 0: PWM (analog OUT) 1
+|     4 | binary_8bit | Arduino (pin 13) 1: PWM (analog OUT) 2
+|     5 | binary_8bit | Arduino (pin 14) 2: ADC (analog IN) 1 (IGNORED)
+|     6 | binary_8bit | Arduino (pin 15) 3: ADC (analog IN) 2 (IGNORED)
+|     7 | binary_8bit | Arduino (pin 6) 4: digital OUT 1
+|     8 | binary_8bit | Arduino (pin 7) 5: digital OUT 2
+|     9 | binary_8bit | Arduino (pin 8) 6: digital OUT 3
+|    10 | binary_8bit | Arduino (pin 9) 7: digital OUT 4
+|    11 | binary_8bit | Arduino (pin 2) 8: digital IN 1 (IGNORED)
+|    12 | binary_8bit | Arduino (pin 3) 9: digital IN 2 (IGNORED)
+|    13 | binary_8bit | Arduino (pin 4) 10: digital IN 3 (IGNORED)
+|    14 | binary_8bit | Arduino (pin 5) 11: digital IN 4 (IGNORED)
 |    15 | binary_8bit | Arduino 12: user defined value 1
 |    16 | binary_8bit | Arduino 13: user defined value 2
 |    17 | binary_8bit | Arduino 14: user defined value 3
