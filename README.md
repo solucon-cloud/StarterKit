@@ -228,6 +228,7 @@ Between frames, a pause of 1 millisecond (approx 1 byte) must be waited.
 These frames can either be sent from the shield to the Arduino, or the other way around.
 
 ## What comes next
+tbd
 
 ##License
 Copyright (c) 2016 Q-loud GmbH
