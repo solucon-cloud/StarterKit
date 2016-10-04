@@ -128,6 +128,105 @@ Go to https://device-manager.solucon.de and log in to your account. From there y
 ## Getting started with SOLUCON Rest-API
 Look at the SOLUCON API documentation <a href="https://app.cospace.de/doc/index.html">here</a>
 
+SOLUCON Arduino Shield cc430-based device. It is a demonstration tool, intended to convince tech staff of a potential customer that our platform is exactly what they need.
+
+The device has the following inputs (device to cloud):
+
+- 2 rotary knobs (red and blue)
+- 1 soft switch (button + led, software-emulated push button switch)
+- 20 8-bit registers accessible via UART
+
+The device has the following outputs (cloud to device):
+
+- 3 RGB-LEDs
+- 20 8-bit registers accessible via UART
+	
+Also, there's 2 LEDs to indicate UART RX and TX.
+
+
+
+## Data Model
+### data
+
+| index | capability  | description
+|------:|-------------|----------------------------------
+|     0 | color_rgb   | left RGB LED
+|     1 | color_rgb   | center RGB LED 
+|     2 | color_rgb   | right RGB LED 
+|     3 | binary_8bit | Arduino  `R_ID=`0: PWM (analog OUT) 1
+|     4 | binary_8bit | Arduino  1: PWM (analog OUT) 2
+|     5 | binary_8bit | Arduino  2: ADC (analog IN) 1
+|     6 | binary_8bit | Arduino  3: ADC (analog IN) 2
+|     7 | binary_8bit | Arduino  4: digital OUT 1
+|     8 | binary_8bit | Arduino  5: digital OUT 2
+|     9 | binary_8bit | Arduino  6: digital OUT 3
+|    10 | binary_8bit | Arduino  7: digital OUT 4
+|    11 | binary_8bit | Arduino  8: digital IN 1
+|    12 | binary_8bit | Arduino  9: digital IN 2
+|    13 | binary_8bit | Arduino 10: digital IN 3
+|    14 | binary_8bit | Arduino 11: digital IN 4
+|    15 | binary_8bit | Arduino 12: user defined value 1
+|    16 | binary_8bit | Arduino 13: user defined value 2
+|    17 | binary_8bit | Arduino 14: user defined value 3
+|    18 | binary_8bit | Arduino 15: user defined value 4
+|    19 | binary_8bit | Arduino 16: user defined value 5
+|    20 | binary_8bit | Arduino 17: user defined value 6
+|    21 | binary_8bit | Arduino 18: user defined value 7
+|    22 | binary_8bit | Arduino 19: user defined value 8
+|    23 | gauge       | red rotary knob
+|    24 | gauge       | blue rotary knob
+|    25 | onoff       | software-emulated on/off switch
+
+
+### action
+
+| index | capability  | description
+|------:|-------------|----------------------------------
+|     0 | color_rgb   | left RGB LED
+|     1 | color_rgb   | center RGB LED 
+|     2 | color_rgb   | right RGB LED 
+|     3 | binary_8bit | Arduino  `R_ID=`0: PWM (analog OUT) 1
+|     4 | binary_8bit | Arduino  1: PWM (analog OUT) 2
+|     5 | binary_8bit | Arduino  2: ADC (analog IN) 1 (IGNORED)
+|     6 | binary_8bit | Arduino  3: ADC (analog IN) 2 (IGNORED)
+|     7 | binary_8bit | Arduino  4: digital OUT 1
+|     8 | binary_8bit | Arduino  5: digital OUT 2
+|     9 | binary_8bit | Arduino  6: digital OUT 3
+|    10 | binary_8bit | Arduino  7: digital OUT 4
+|    11 | binary_8bit | Arduino  8: digital IN 1 (IGNORED)
+|    12 | binary_8bit | Arduino  9: digital IN 2 (IGNORED)
+|    13 | binary_8bit | Arduino 10: digital IN 3 (IGNORED)
+|    14 | binary_8bit | Arduino 11: digital IN 4 (IGNORED)
+|    15 | binary_8bit | Arduino 12: user defined value 1
+|    16 | binary_8bit | Arduino 13: user defined value 2
+|    17 | binary_8bit | Arduino 14: user defined value 3
+|    18 | binary_8bit | Arduino 15: user defined value 4
+|    19 | binary_8bit | Arduino 16: user defined value 5
+|    20 | binary_8bit | Arduino 17: user defined value 6
+|    21 | binary_8bit | Arduino 18: user defined value 7
+|    22 | binary_8bit | Arduino 19: user defined value 8
+
+
+## UART communication
+We use UART with 9600 bps, 8N1.
+
+### UART Frames
+
+| byte |    0 |    1 |    2 |   3 
+|------|------|------|------|------
+| name |`P_ID`|`R_ID`|`DATA`|`CKSM`
+
+
+- `P_ID`: Protocol ID, always 0x42
+- `R_ID`: Register index, 0x00 to 0x13 (dec:19)
+- `DATA`: Data value for the register stated in `R_ID`
+- `CKSM`: checksum. bytes 0, 1 and 2 added (8 bit, discard overflow)
+
+
+Between frames, a pause of 1 millisecond (approx 1 byte) must be waited.
+
+These frames can either be sent from the shield to the Arduino, or the other way around.
+
 ## What comes next
 
 ##License
