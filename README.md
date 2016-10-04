@@ -6,7 +6,7 @@ Release Date: 04.10.2016
 
 Frank Radeck, http://www.q-loud.de
 
-Libray for Q-loud Arduino IoT-shield to communicate with SOLUCON cloud. The IoT Starter Kit is an easy to use add-on board for the fantastic
+Libray for Q-loud Arduino IoT-shield to communicate with SOLUCON platform. The IoT Starter Kit is an easy to use add-on board for the fantastic
 Arduino hardware. You can send and receive encryped data and commands securely to the SOLUCON platform, witch is designed especially for Iot-Data.
 
 ##Prerequisites
