@@ -34,7 +34,23 @@ SOLUCON is one of the leading IoT platforms and a powerful ecosystem.
 
 ## Information about hardware
 ### What is the IoT-Starter Kit for SOLUCON platform
-Arduino is an open-source development platform for physical computing. It is intended for hobbyists, designers or anyone interested to build interactive objects. The IoT-Starter Kit consist one Arduino Mega 2060, Q-Loud IoT-shield for Arduino and a Q-loud Gateway. With a few lines of code you are enabled to send and receive data from the SOLUCON cloud to your Arduino board. Digital pins 2, 3, 4, 5 are pre-configured as input and pins 6, 7, 8 ,9 as output ports. There also 2 PWM outputs (Pin 12, 13) and 2 analog inputs (Pin 14, 15) configured by calling the **init()** function. These features can seperatly disabled by software functions. Events and data from the cloud can be catched as user-defined-data in a callback function in the .ino-file.
+Arduino is an open-source development platform for physical computing. It is intended for hobbyists, designers or anyone interested to build interactive objects. The IoT-Starter Kit consist one Arduino Mega 2060, Q-Loud IoT-shield for Arduino and a Q-loud Gateway. 
+Q-loud IoT-shield is a cc430-based device. It is a demonstration tool, intended to convince tech staff of a potential customer that our platform is exactly what they need.
+
+The device has the following inputs (device to cloud):
+
+- 2 rotary knobs (red and blue)
+- 1 soft switch (button + led, software-emulated push button switch)
+- 20 8-bit registers accessible via UART
+
+The device has the following outputs (cloud to device):
+
+- 3 RGB-LEDs
+- 20 8-bit registers accessible via UART
+	
+Also, there's 2 LEDs to indicate UART RX and TX.
+
+With a few lines of code you are enabled to send and receive data from the SOLUCON cloud to your Arduino board. Digital pins 2, 3, 4, 5 are pre-configured as input and pins 6, 7, 8 ,9 as output ports. There also 2 PWM outputs (Pin 12, 13) and 2 analog inputs (Pin 14, 15) configured by calling the **init()** function. These features can seperatly disabled by software functions. Events and data from the cloud can be catched as user-defined-data in a callback function in the .ino-file.
 <br>
 
 ## Setting up software
@@ -127,23 +143,6 @@ Go to https://device-manager.solucon.de and log in to your account. From there y
 
 ## Getting started with SOLUCON Rest-API
 Look at the SOLUCON API documentation <a href="https://app.cospace.de/doc/index.html">here</a>
-
-SOLUCON Arduino Shield cc430-based device. It is a demonstration tool, intended to convince tech staff of a potential customer that our platform is exactly what they need.
-
-The device has the following inputs (device to cloud):
-
-- 2 rotary knobs (red and blue)
-- 1 soft switch (button + led, software-emulated push button switch)
-- 20 8-bit registers accessible via UART
-
-The device has the following outputs (cloud to device):
-
-- 3 RGB-LEDs
-- 20 8-bit registers accessible via UART
-	
-Also, there's 2 LEDs to indicate UART RX and TX.
-
-
 
 ## Data Model
 ### data
