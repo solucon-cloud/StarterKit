@@ -70,7 +70,7 @@ And then at global scope you should instantiate an **SOLUCON** object
     SOLUXON Solucon;
 ```
 
-* **init()** calling this method to start serial communication between Arduino and Q-loud IoT-shield and enable pin mapping automaticly to SOLUCON cloud. Serial communication between Arduino and IoT-shield is done by Software Serial (Pin 10,11) with 9600 kB/s.
+* **init()** calling this method to start serial communication between Arduino and Q-loud IoT-shield and enable pin mapping automaticly to SOLUCON cloud. Serial communication between Arduino and IoT-shield is done by Software-Serial (Pin 10,11) at 9600 kB/s.
 ```C++
     void setup()
     {
