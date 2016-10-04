@@ -123,6 +123,8 @@ Digital output is automaticly enabled by calling init(). You can disable digital
 
 
 ## Monitor data in SOLUCON Device-Manager
+Go to https://device-manager.solucon.de and log in to your account. From there you can control your device in a rich GUI implentation.
+
 ## Getting started with SOLUCON Rest-API
 Look at the SOLUCON API documentation <a href="https://app.cospace.de/doc/index.html">here</a>
 
