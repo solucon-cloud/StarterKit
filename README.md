@@ -57,8 +57,19 @@ Install the SOLUCON IoT Starter Kit library.
 * Run the simple sample application.
 * Go to https://device-manager.solucon.de to control your device
 
-### Starting the module:
-* **SOLUCON solucon** initialize the contructor
+### Usage:
+At the top of your sketch you must include the **Solucon** header file
+
+```C
+    #include <Solucon.h>
+```
+
+And then at global scope you should instantiate an **SOLUCON** object
+
+```C
+    SOLUXON Solucon;
+```
+
 * **init()** calling this method to start serial communication between Arduino and Q-loud IoT-shield and enable pin mapping automaticly to SOLUCON cloud. Serial communication between Arduino and IoT-shield is done by Software Serial (Pin 10,11) with 9600 kB/s.
 ```C++
     void setup()
