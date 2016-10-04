@@ -124,6 +124,7 @@ Digital output is automaticly enabled by calling init(). You can disable digital
 
 ## Monitor data in SOLUCON Device-Manager
 ## Getting started with SOLUCON Rest-API
+Look at the wiki pages <a href="http://arduino.cc/en/Main/software/">here</a>
 
 ## What comes next
 
