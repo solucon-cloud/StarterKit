@@ -4,7 +4,7 @@ Version: 1.0
 
 Release Date: 04.10.2016
 
-http://www.q-loud.de
+Frank Radeck, http://www.q-loud.de
 
 Libray for Q-loud Arduino IoT-shield to communicate with SOLUCON cloud. The IoT Starter Kit is an easy to use add-on board for the fantastic
 Arduino hardware. You can send and receive encryped data and commands securely to the SOLUCON platform, witch is designed especially for Iot-Data.
@@ -34,7 +34,7 @@ SOLUCON is one of the leading IoT platforms and a powerful ecosystem.
 
 ## Information about hardware
 ### What is the IoT-Starter Kit for SOLUCON platform
-Arduino is an open-source development platform for physical computing. It is intended for hobbyists, designers or anyone interested to build interactive objects. The IoT-Starter Kit consist one Arduino Mega 2060, Q-Loud IoT-shield for Arduino and a Q-loud Gateway. With a few lines of code you are enabled to send and receive data from the SOLUCON cloud to your Arduino board. Go to 
+Arduino is an open-source development platform for physical computing. It is intended for hobbyists, designers or anyone interested to build interactive objects. The IoT-Starter Kit consist one Arduino Mega 2060, Q-Loud IoT-shield for Arduino and a Q-loud Gateway. With a few lines of code you are enabled to send and receive data from the SOLUCON cloud to your Arduino board. Digital pins 2, 3, 4, 5 are pre-configured as input and pins 6, 7, 8 ,9 as output ports. There also 2 PWM outputs (Pin 12, 13) and 2 analog inputs (Pin 14, 15) configured by calling the **init()** function. These features can seperatly disabled by software functions. Events and data from the cloud can be catched as user-defined-data in a callback function in the .ino-file.
 <br>
 
 ## Setting up software
@@ -88,10 +88,37 @@ call the `loop()` function. Pass your callback function as parameter.
     }
 ```
 * **registerPwmOut(boolean)**
+PWM output is automaticly enabled by calling init(). You can disable PWM output by calling
+```C++
+    void setup()
+    {
+        Solucon.registerPwmOut(false);
+    }
+```
 * **registerAnalogIn(boolean)**
+Analog input is automaticly enabled by calling init(). You can disable analog input by calling
+```C++
+    void setup()
+    {
+        Solucon.registerAnalogIn(false);
+    }
+```
 * **registerDigitalIn(boolean)**
+Digital input is automaticly enabled by calling init(). You can disable digital outout by calling
+```C++
+    void setup()
+    {
+        Solucon.registerDigitalIn(false);
+    }
+```
 * **registerDigitalOut(boolean)**
-
+Digital output is automaticly enabled by calling init(). You can disable digital output by calling
+```C++
+    void setup()
+    {
+        Solucon.registerDigitalOut(false);
+    }
+```
  
 
 
