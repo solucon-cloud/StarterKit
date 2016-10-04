@@ -59,8 +59,23 @@ Install the SOLUCON IoT Starter Kit library.
 
 ### Starting the module:
 * **SOLUCON solucon** initialize the contructor
-* **init()** 
-* **loop(callback)**
+* **init()** calling this method to start serial communication between Arduino and Q-loud IoT-shield and enable pin mapping automaticly to SOLUCON cloud. Serial communication between Arduino and IoT-shield is done by Software Serial (Pin 10,11) with 9600 kB/s.
+```C++
+    void setup()
+    {
+        Solucon.init();
+    }
+```
+* **loop(CallBackType callback)** 
+To actually process events in the event queue and dispatch them to listeners you
+call the `loop()` function. Pass your callback function as parameter.
+
+```C++
+    void loop()
+    {
+        Solucon.loop(&callback);
+    }
+```
 * **registerPwmOut(boolean)**
 * **registerAnalogIn(boolean)**
 * **registerDigitalIn(boolean)**
