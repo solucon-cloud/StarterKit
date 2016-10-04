@@ -35,7 +35,7 @@ SOLUCON is one of the leading IoT platforms and a powerful ecosystem.
 ## Information about hardware
 ### What is the IoT-Starter Kit for SOLUCON platform
 Arduino is an open-source development platform for physical computing. It is intended for hobbyists, designers or anyone interested to build interactive objects. The IoT-Starter Kit consist one Arduino Mega 2060, Q-Loud IoT-shield for Arduino and a Q-loud Gateway. 
-Q-loud IoT-shield is a cc430-based device. It is a demonstration tool, intended to convince tech staff of a potential customer that our platform is exactly what they need.
+This shield is a cc430-based device. It is a demonstration tool, intended to convince tech staff of a potential customer that our platform is exactly what they need.
 
 The device has the following inputs (device to cloud):
 
