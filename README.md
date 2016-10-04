@@ -55,10 +55,17 @@ Install the SOLUCON IoT Starter Kit library.
 * Scan the QR-code of the shield and create a SOLUCON-Accout
 * Install the Q-Loud IoT-shield to the Arduino board.
 * Run the simple sample application.
+* Go to https://device-manager.solucon.de to control your device
 
 ### Starting the module:
 * **SOLUCON solucon** initialize the contructor
-* **Init()** 
+* **init()** 
+* **loop(callback)**
+* **registerPwmOut(boolean)**
+* **registerAnalogIn(boolean)**
+* **registerDigitalIn(boolean)**
+* **registerDigitalOut(boolean)**
+
  
 
 
