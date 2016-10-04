@@ -35,8 +35,7 @@ SOLUCON is one of the leading IoT platforms and a powerful ecosystem.
 ## Information about hardware
 ### What is the IoT-Starter Kit for SOLUCON platform
 Arduino is an open-source development platform for physical computing. It is intended for hobbyists, designers or anyone interested to build interactive objects. The IoT-Starter Kit consist one Arduino Mega 2060, Q-Loud IoT-shield for Arduino and a Q-loud Gateway. With a few lines of code you are enabled to send and receive data from the SOLUCON cloud to your Arduino board. Go to 
-
-
+<br>
 
 ## Setting up software
 Arduino IDE 1.5.7
@@ -52,13 +51,13 @@ Install the SOLUCON IoT Starter Kit library.
 
 
 ## Getting started with IoT Starter Kit
-###Download and install one of the mobile apps for Android or IOS.
-###Scan the QR-code of the shield and create a SOLUCON-Accout
-###Install the Q-Loud IoT-shield to the Arduino board.
-###Run the simple sample application.
+* Download and install one of the mobile apps for Android or IOS.
+* Scan the QR-code of the shield and create a SOLUCON-Accout
+* Install the Q-Loud IoT-shield to the Arduino board.
+* Run the simple sample application.
 
 ### Starting the module:
-**SOLUCON solucon** initialize the contructor
+* **SOLUCON solucon** initialize the contructor
 * **Init()** 
  
 
