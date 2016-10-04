@@ -24,6 +24,7 @@ Arduino hardware. You can send and receive encryped data and commands securely t
 * [Monitor data in SOLUCON Device-Manager] (#monitor-data-in-solucon-device-manager)
 * [Getting started with SOLUCON Rest-API](#getting-started-with-solucon-rest-api)
 * [What comes next](#what-comes-next)
+* [License](#license)
 
 
 
@@ -33,7 +34,7 @@ SOLUCON is one of the leading IoT platforms and a powerful ecosystem.
 
 ## Information about hardware
 ### What is the IoT-Starter Kit for SOLUCON platform
-Arduino is an open-source development platform for physical computing. It is intended for hobbyists, designers or anyone interested to build interactive objects.
+Arduino is an open-source development platform for physical computing. It is intended for hobbyists, designers or anyone interested to build interactive objects. The IoT-Starter Kit consist one Arduino Mega 2060, Q-Loud IoT-shield for Arduino and a Q-loud Gateway. With a few lines of code you are enabled to send and receive data from the SOLUCON cloud to your Arduino board. 
 
 
 
@@ -50,7 +51,24 @@ Install the SOLUCON IoT Starter Kit library.
 
 
 ## Getting started with IoT Starter Kit
+###Install the Q-Loud IoT-shield to the Arduino board.
+###Run the simple sample application.
+
+### Starting the module
+**SOLUCON solucon** initialize the library
+* **Init()** 
+ 
+
+
 ## Monitor data in SOLUCON Device-Manager
 ## Getting started with SOLUCON Rest-API
 
 ## What comes next
+
+##License
+Copyright (c) 2016 Q-loud GmbH
+This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License along with this program. If not, see http://www.gnu.org/licenses/.
