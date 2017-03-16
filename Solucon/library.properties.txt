@@ -1,0 +1,8 @@
+name=StarterKit
+version=1.0
+author=Frank Radeck, Q-loud GmbH
+maintainer=Q-loud GmbH <info@q-loud.de>
+sentence=Bring your M2M data into the cloud and/or remotely control your Arduino.
+paragraph=Libray for Q-loud Arduino IoT-shield to communicate with SOLUCON cloud.
+url=http://www.q-loud.de
+architectures=*
