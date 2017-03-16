@@ -90,7 +90,7 @@ And then at global scope you should instantiate an **SOLUCON** object
 ```C++
     void setup()
     {
-        Solucon.init();
+        Solucon.Init();
     }
 ```
 * **loop(CallBackType callback)** 
