@@ -86,7 +86,7 @@ And then at global scope you should instantiate an **SOLUCON** object
     SOLUXON Solucon;
 ```
 
-* **init()** calling this method to start serial communication between Arduino and Q-loud IoT-shield and enable pin mapping automaticly to SOLUCON cloud. Serial communication between Arduino and IoT-shield is done by Software-Serial (Pin 10,11) at 9600 kB/s.
+* **Init()** calling this method to start serial communication between Arduino and Q-loud IoT-shield and enable pin mapping automaticly to SOLUCON cloud. Serial communication between Arduino and IoT-shield is done by Software-Serial (Pin 10,11) at 9600 kB/s.
 ```C++
     void setup()
     {
@@ -133,6 +133,18 @@ Digital output is automaticly enabled by calling init(). You can disable digital
     void setup()
     {
         Solucon.registerDigitalOut(false);
+    }
+```
+* **send2Cloud(uint8_t port, uint8_t tx)**
+Calling this method to send data to SOLUCON. First parameter is the index in the data model, second parameter is the value.
+```C++
+    void loop()
+    {	
+    	
+        if (millis() - temptime > 10000) {
+		counter++;
+		Solucon.send2Cloud(18, counter);
+	}
     }
 ```
  
