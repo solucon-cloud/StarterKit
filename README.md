@@ -83,7 +83,7 @@ At the top of your sketch you must include the **Solucon** header file
 And then at global scope you should instantiate an **SOLUCON** object
 
 ```C
-    SOLUXON Solucon;
+    SOLUCON Solucon;
 ```
 
 * **Init()** calling this method to start serial communication between Arduino and Q-loud IoT-shield and enable pin mapping automaticly to SOLUCON cloud. Serial communication between Arduino and IoT-shield is done by Software-Serial (Pin 10,11) at 9600 kB/s.
