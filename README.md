@@ -1,4 +1,4 @@
-# SOLUCON IoT Starter Kit
+# Q-loud IoT Arduino Shield
 
 Version: 1.0
 
@@ -6,8 +6,8 @@ Release Date: 04.10.2016
 
 Frank Radeck, http://www.q-loud.de
 
-Libray for Q-loud Arduino IoT-shield to communicate with SOLUCON platform. The IoT Starter Kit is an easy to use add-on board for the fantastic
-Arduino hardware. You can send and receive encryped data and commands securely to the SOLUCON platform, witch is designed especially for Iot-Data.
+Libray for Q-loud Arduino IoT-shield to communicate with Q-loud IoT platform. The IoT Starter Kit is an easy to use add-on board for the fantastic
+Arduino hardware. You can send and receive encryped data and commands securely to the Q-loud IoT platform, witch is designed especially for Iot-Data.
 
 ##Prerequisites
 * Arduino board (Arduino UNO, DUE, Leonardo, Mega 2560)
@@ -21,8 +21,8 @@ Arduino hardware. You can send and receive encryped data and commands securely t
 * [Information about hardware](#information-about-hardware)
 * [Setting up software](#setting-up-software)
 * [Getting started with IoT Starter Kit](#getting-started-with-iot-starter-kit)
-* [Monitor data in SOLUCON Device-Manager] (#monitor-data-in-solucon-device-manager)
-* [Getting started with SOLUCON Rest-API](#getting-started-with-solucon-rest-api)
+* [Monitor data in Q-loud Device-Manager] (#monitor-data-in-q-loud-device-manager)
+* [Getting started with Q-loud Rest-API](#getting-started-with-q-loud-rest-api)
 * [What comes next](#what-comes-next)
 * [License](#license)
 
@@ -30,10 +30,10 @@ Arduino hardware. You can send and receive encryped data and commands securely t
 
 
 ## Overview
-SOLUCON is one of the leading IoT platforms and a powerful ecosystem.
+Q-loud is one of the leading IoT platforms and a powerful ecosystem.
 
 ## Information about hardware
-### What is the IoT-Starter Kit for SOLUCON platform
+### What is the IoT-Starter Kit for Q-loud platform
 Arduino is an open-source development platform for physical computing. It is intended for hobbyists, designers or anyone interested to build interactive objects. The IoT-Starter Kit consist one Arduino Mega 2060, Q-Loud IoT-shield for Arduino and a Q-loud Gateway. 
 This shield is a cc430-based device. It is a demonstration tool, intended to convince tech staff of a potential customer that our platform is exactly what they need.
 
@@ -50,7 +50,7 @@ The device has the following outputs (cloud to device):
 	
 Also, there's 2 LEDs to indicate UART RX and TX.
 
-With a few lines of code you are enabled to send and receive data from the SOLUCON cloud to your Arduino board. Digital pins 2, 3, 4, 5 are pre-configured as input and pins 6, 7, 8 ,9 as output ports. There also 2 PWM outputs (Pin 12, 13) and 2 analog inputs (Pin 14, 15) configured by calling the **init()** function. These features can seperatly disabled by software functions. Events and data from the cloud can be catched as user-defined-data in a callback function in the .ino-file.
+With a few lines of code you are enabled to send and receive data from the Q-loud cloud to your Arduino board. Digital pins 2, 3, 4, 5 are pre-configured as input and pins 6, 7, 8 ,9 as output ports. There also 2 PWM outputs (Pin 12, 13) and 2 analog inputs (Pin 14, 15) configured by calling the **init()** function. These features can seperatly disabled by software functions. Events and data from the cloud can be catched as user-defined-data in a callback function in the .ino-file.
 <br>
 
 ## Setting up software
@@ -60,7 +60,7 @@ Arduino IDE 1.5.7
 Download and install the Arduino IDE version 1.5.7, see instructions <a href="http://arduino.cc/en/Main/software/">here</a>. Versions lower then 1.5.7 will produce errors with some sketches as the compiler is too old.
 Start the Arduino IDE once and quit the application again. This will create directory structures needed in the next steps.
 
-Install the SOLUCON IoT Starter Kit library.
+Install the Q-loud IoT Starter Kit library.
 
 **[Installing an Arduino Library Guide](https://learn.sparkfun.com/tutorials/installing-an-arduino-library)** - Basic information on how to install an Arduino library.
 
@@ -68,10 +68,10 @@ Install the SOLUCON IoT Starter Kit library.
 
 ## Getting started with IoT Starter Kit
 * Download and install one of the mobile apps for Android or IOS.
-* Scan the QR-code of the shield and create a SOLUCON-Accout
+* Scan the QR-code of the shield and create a Q-loud-Accout
 * Install the Q-Loud IoT-shield to the Arduino board.
 * Run the simple sample application.
-* Go to https://device-manager.solucon.de to control your device
+* Go to https://device-manager.Q-loud.de to control your device
 
 ### Usage:
 At the top of your sketch you must include the **Solucon** header file
@@ -150,11 +150,11 @@ Calling this method to send data to SOLUCON. First parameter is the index in the
  
 
 
-## Monitor data in SOLUCON Device-Manager
+## Monitor data in Q-loud Device-Manager
 Go to https://device-manager.solucon.de and log in to your account. From there you can control your device in a rich GUI implentation.
 
-## Getting started with SOLUCON Rest-API
-Look at the SOLUCON API documentation <a href="https://app.cospace.de/doc/index.html">here</a>
+## Getting started with Q-loud Rest-API
+Look at the Q-loud API documentation <a href="https://q-loud.de/api">here</a>
 
 ## Data Model
 ### data
