@@ -1,4 +1,4 @@
-# SOLUCON IoT Starter Kit
+# Q-loud Arduino IoT-Shield
 
 Version: 1.0
 
